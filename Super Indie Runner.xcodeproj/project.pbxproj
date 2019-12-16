@@ -11,6 +11,7 @@
 		3404CE3023A63F68003E5B3C /* SceneManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404CE2F23A63F68003E5B3C /* SceneManagerDelegate.swift */; };
 		3404CE3223A64197003E5B3C /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404CE3123A64197003E5B3C /* LevelScene.swift */; };
 		34071A8223A7795100749470 /* PowerupEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 34071A8123A7795100749470 /* PowerupEmitter.sks */; };
+		34071A8A23A78DEA00749470 /* Level_1-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 34071A8923A78DEA00749470 /* Level_1-1.sks */; };
 		3407DD052397B91A007BC358 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407DD042397B91A007BC358 /* Layer.swift */; };
 		3407DD072397BEF0007BC358 /* RepeatingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407DD062397BEF0007BC358 /* RepeatingLayer.swift */; };
 		3407DD092397C2D8007BC358 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407DD082397C2D8007BC358 /* GameConstants.swift */; };
@@ -68,6 +69,7 @@
 		3404CE2F23A63F68003E5B3C /* SceneManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManagerDelegate.swift; sourceTree = "<group>"; };
 		3404CE3123A64197003E5B3C /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
 		34071A8123A7795100749470 /* PowerupEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PowerupEmitter.sks; sourceTree = "<group>"; };
+		34071A8923A78DEA00749470 /* Level_1-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_1-1.sks"; sourceTree = "<group>"; };
 		3407DD042397B91A007BC358 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		3407DD062397BEF0007BC358 /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
 		3407DD082397C2D8007BC358 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
@@ -229,10 +231,10 @@
 		34D7BADB2397A05800158AD0 /* Super Indie Runner */ = {
 			isa = PBXGroup;
 			children = (
+				34D7BAE92397A05B00158AD0 /* Assets.xcassets */,
 				348CD45E239B1CFD00CE20F5 /* Resources */,
 				348CD459239B1C6000CE20F5 /* Protocols */,
 				349024F8239A5D5C00691062 /* Particle Emitters */,
-				34D7BAE92397A05B00158AD0 /* Assets.xcassets */,
 				34BF26C723986C2F00F6C68A /* Helper Files */,
 				3407DD0A2397C4E9007BC358 /* Custom Classes */,
 				3407DD032397B90C007BC358 /* Layers */,
@@ -315,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				34D7BB182397A5A500158AD0 /* Level_0-1.sks */,
+				34071A8923A78DEA00749470 /* Level_1-1.sks */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			files = (
 				34D7BB1C2397A66F00158AD0 /* TileSets.sks in Resources */,
 				34D7BAE82397A05800158AD0 /* Main.storyboard in Resources */,
+				34071A8A23A78DEA00749470 /* Level_1-1.sks in Resources */,
 				348CD462239B1D4600CE20F5 /* unanimous.inverted-brk.ttf in Resources */,
 				349024FB239A5DAB00691062 /* CoinDustEmitter.sks in Resources */,
 				34D7BB152397A2D900158AD0 /* Default-568h@2x.png in Resources */,
