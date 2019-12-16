@@ -195,6 +195,9 @@ class GameScene: SKScene {
     }
     
     func handleEnemyContact() {
+        if (player.invincible) {
+            return
+        }
         die(reason: 0)
     }
     
@@ -209,6 +212,8 @@ class GameScene: SKScene {
             case GameConstants.StringConstants.coinName,
                  _ where GameConstants.StringConstants.superCoinNames.contains(sprite.name!):
                 collectCoin(sprite: sprite)
+            case GameConstants.StringConstants.powerUpName:
+                player.activatePowerup(active: true)
             default:
                 break
         }
