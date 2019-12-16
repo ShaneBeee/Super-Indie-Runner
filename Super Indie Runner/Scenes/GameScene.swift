@@ -16,6 +16,7 @@ class GameScene: SKScene {
     
     var worldLayer: Layer!
     var backgroundLayer: RepeatingLayer!
+    var foregroundLayer: RepeatingLayer!
     var mapNope: SKNode!
     var tileMap: SKTileMapNode!
     
@@ -102,6 +103,22 @@ class GameScene: SKScene {
         }
         
         backgroundLayer.layerVelocity = CGPoint(x: -100.0, y: 0.0)
+        
+        if (world == 1) {
+            foregroundLayer = RepeatingLayer()
+            foregroundLayer.zPosition = GameConstants.ZPositions.hudZ
+            addChild(foregroundLayer)
+            
+            for i in 0...1 {
+                let foregroundImage = SKSpriteNode(imageNamed: GameConstants.StringConstants.foregroundLayer)
+                foregroundImage.name = String(i)
+                foregroundImage.scale(to: frame.size, width: false, multiplier: 1/15)
+                foregroundImage.anchorPoint = CGPoint.zero
+                foregroundImage.position = CGPoint(x: 0.0 + CGFloat(i) * foregroundImage.size.width, y: 0.0)
+                foregroundLayer.addChild(foregroundImage)
+            }
+            foregroundLayer.layerVelocity = CGPoint(x: -300.0, y: 0.0)
+        }
         
         load(level: levelKey)
     }
@@ -351,6 +368,9 @@ class GameScene: SKScene {
         if (gameState == .ONGOING) {
             worldLayer.update(dt)
             backgroundLayer.update(dt)
+            if (world == 1) {
+                foregroundLayer.update(dt)
+            }
         }
     }
     

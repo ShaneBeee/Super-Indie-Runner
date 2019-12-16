@@ -70,6 +70,7 @@
 		3404CE3123A64197003E5B3C /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
 		34071A8123A7795100749470 /* PowerupEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PowerupEmitter.sks; sourceTree = "<group>"; };
 		34071A8923A78DEA00749470 /* Level_1-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_1-1.sks"; sourceTree = "<group>"; };
+		34071A8B23A7934F00749470 /* Super Indie Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Super Indie Runner.entitlements"; sourceTree = "<group>"; };
 		3407DD042397B91A007BC358 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		3407DD062397BEF0007BC358 /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
 		3407DD082397C2D8007BC358 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 		34D7BADB2397A05800158AD0 /* Super Indie Runner */ = {
 			isa = PBXGroup;
 			children = (
+				34071A8B23A7934F00749470 /* Super Indie Runner.entitlements */,
 				34D7BAE92397A05B00158AD0 /* Assets.xcassets */,
 				348CD45E239B1CFD00CE20F5 /* Resources */,
 				348CD459239B1C6000CE20F5 /* Protocols */,
@@ -674,6 +676,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Super Indie Runner/Super Indie Runner.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -687,6 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tk.shanebee.Super-Indie-Runner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -696,6 +700,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Super Indie Runner/Super Indie Runner.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -709,6 +714,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tk.shanebee.Super-Indie-Runner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
