@@ -301,6 +301,10 @@ class GameScene: SKScene {
     }
     
     func finishGame() {
+        if (player.position.y > frame.size.height*0.7) {
+            coins += 10
+            
+        }
         gameState = .FINISHED
         var stars = 0
         let percentage = CGFloat(coins) / 100.0
@@ -318,6 +322,12 @@ class GameScene: SKScene {
         ]
         ScoreManger.compare(scores: [scores], in: levelKey)
         createAndShowPopup(type: 1, title: GameConstants.StringConstants.completedKey)
+        
+        if (level < 9) {
+            let nextLevelKey = "Level_\(world)-\(level+1)"
+            UserDefaults.standard.set(true, forKey: nextLevelKey)
+            UserDefaults.standard.synchronize()
+        }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
